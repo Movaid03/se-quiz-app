@@ -1,0 +1,460 @@
+{
+  "topics": [
+    {
+      "id": "Basics",
+      "title": "Software Engineering Basics",
+      "desc": "SDLC, principles, core concepts",
+      "icon": "school",
+      "reading": "Software engineering is the systematic application of engineering principles to software development. Instead of writing code ad hoc, engineers follow a process so that software is reliable, maintainable and delivered on time.\n\nThe Software Development Life Cycle (SDLC) describes the phases most projects pass through: requirements, design, implementation, testing, deployment and maintenance. Maintenance is often the longest and most expensive phase, because software keeps changing after release.\n\nGood software is judged on qualities such as correctness, reliability, usability, efficiency and maintainability. Core principles that help achieve them include abstraction, modularity, separation of concerns and keeping designs simple.",
+      "questions": [
+        {
+          "text": "What does SDLC stand for?",
+          "options": ["Software Development Life Cycle", "System Design Logic Code", "Software Debugging Level Control", "Secure Data Link Channel"],
+          "correctIndex": 0,
+          "explanation": "SDLC stands for Software Development Life Cycle."
+        },
+        {
+          "text": "Which is typically an SDLC phase?",
+          "options": ["Cooking", "Testing", "Painting", "Driving"],
+          "correctIndex": 1,
+          "explanation": "Testing is one of the standard phases of the SDLC."
+        },
+        {
+          "text": "Which SDLC phase usually costs the most over a product's lifetime?",
+          "options": ["Requirements", "Design", "Implementation", "Maintenance"],
+          "correctIndex": 3,
+          "explanation": "Software keeps changing after release, so maintenance is usually the longest and most expensive phase."
+        },
+        {
+          "text": "Separation of concerns means…",
+          "options": ["Splitting a system so each part handles one responsibility", "Keeping developers in separate rooms", "Writing all code in one file", "Testing only at the end"],
+          "correctIndex": 0,
+          "explanation": "Each module focuses on one concern, which makes the system easier to understand and change."
+        },
+        {
+          "text": "Which is a non-functional quality of software?",
+          "options": ["Users can log in", "Reports can be exported", "Pages load in under 2 seconds", "Orders can be cancelled"],
+          "correctIndex": 2,
+          "explanation": "Performance is a non-functional quality. The others describe features, which are functional."
+        },
+        {
+          "text": "Abstraction helps engineers by…",
+          "options": ["Adding more detail everywhere", "Hiding unnecessary detail to focus on what matters", "Removing all comments", "Making code run faster"],
+          "correctIndex": 1,
+          "explanation": "Abstraction hides complexity behind a simpler model or interface."
+        },
+        {
+          "text": "Refactoring is…",
+          "options": ["Adding new features", "Changing code structure without changing its behaviour", "Deleting the test suite", "Rewriting the product in a new language"],
+          "correctIndex": 1,
+          "explanation": "Refactoring improves the internal structure of code while keeping its external behaviour the same."
+        },
+        {
+          "text": "Technical debt refers to…",
+          "options": ["Money owed to software vendors", "The cost of servers", "Future rework caused by choosing a quick solution now", "Unpaid developer overtime"],
+          "correctIndex": 2,
+          "explanation": "Shortcuts taken today create extra work later, like interest on a debt."
+        }
+      ]
+    },
+    {
+      "id": "Agile vs Waterfall",
+      "title": "Agile vs Waterfall",
+      "desc": "Compare methodologies and use cases",
+      "icon": "compare",
+      "reading": "Waterfall is a linear process: each phase (requirements, design, build, test, deploy) is finished before the next one begins. It works well when requirements are clear and unlikely to change, but problems are often found late and change is expensive.\n\nAgile is iterative and incremental. Work is delivered in short cycles, and the team gathers feedback after each one. The Agile Manifesto values individuals and interactions, working software, customer collaboration and responding to change.\n\nScrum is a popular Agile framework. A Product Owner manages the product backlog, a Scrum Master supports the process, and the development team delivers a usable increment every sprint, usually 1 to 4 weeks long. Events include sprint planning, the daily stand-up, the sprint review and the retrospective.",
+      "questions": [
+        {
+          "text": "Which methodology is iterative?",
+          "options": ["Waterfall", "Agile", "V-Model", "Big Bang"],
+          "correctIndex": 1,
+          "explanation": "Agile uses iterations (sprints) and frequent feedback."
+        },
+        {
+          "text": "Waterfall development is best described as…",
+          "options": ["Iterative", "Linear", "Random", "Prototype-first"],
+          "correctIndex": 1,
+          "explanation": "Waterfall follows sequential phases in a linear order."
+        },
+        {
+          "text": "In Scrum, who is responsible for managing the product backlog?",
+          "options": ["Scrum Master", "Development team", "Product Owner", "Project sponsor"],
+          "correctIndex": 2,
+          "explanation": "The Product Owner orders the backlog to maximise the value the team delivers."
+        },
+        {
+          "text": "How long is a typical Scrum sprint?",
+          "options": ["1 day", "1 to 4 weeks", "6 months", "1 year"],
+          "correctIndex": 1,
+          "explanation": "Sprints are short, fixed-length cycles of 1 to 4 weeks."
+        },
+        {
+          "text": "Which meeting is used to reflect on how the team can improve its process?",
+          "options": ["Sprint retrospective", "Sprint planning", "Daily stand-up", "Kick-off meeting"],
+          "correctIndex": 0,
+          "explanation": "The retrospective looks back at the sprint and agrees improvements for the next one."
+        },
+        {
+          "text": "When is Waterfall most suitable?",
+          "options": ["Requirements change every week", "Requirements are clear and stable", "The customer wants frequent demos", "The team is exploring a new idea"],
+          "correctIndex": 1,
+          "explanation": "Waterfall works best when the requirements are well understood up front."
+        },
+        {
+          "text": "The Agile Manifesto values working software over…",
+          "options": ["Customer collaboration", "Responding to change", "Comprehensive documentation", "Individuals and interactions"],
+          "correctIndex": 2,
+          "explanation": "Working software over comprehensive documentation is one of the four Agile values."
+        },
+        {
+          "text": "A user story is usually written as…",
+          "options": ["As a <user>, I want <goal> so that <benefit>", "A full technical specification", "A list of database tables", "A bug report"],
+          "correctIndex": 0,
+          "explanation": "User stories describe a need from the user's point of view in one short sentence."
+        }
+      ]
+    },
+    {
+      "id": "OOP",
+      "title": "Object-Oriented Programming",
+      "desc": "Classes, objects, encapsulation",
+      "icon": "cube",
+      "reading": "Object-oriented programming (OOP) organises code around objects, which combine data (fields) and behaviour (methods). A class is the blueprint and an object is an instance of that class.\n\nThe four pillars of OOP are encapsulation, abstraction, inheritance and polymorphism. Encapsulation hides internal state behind methods. Abstraction exposes only what other code needs. Inheritance lets a class reuse and extend another class. Polymorphism lets different classes be used through the same interface, with each one providing its own behaviour.\n\nMany designers prefer composition over inheritance: building objects out of smaller objects is often more flexible than deep class hierarchies.",
+      "questions": [
+        {
+          "text": "Encapsulation means…",
+          "options": ["Hiding internal data and controlling access", "Only focusing on UI design", "Writing code without classes", "Using many languages"],
+          "correctIndex": 0,
+          "explanation": "Encapsulation hides internal state and exposes safe methods."
+        },
+        {
+          "text": "A class is…",
+          "options": ["A blueprint for objects", "An instance of an object", "A database table", "A function"],
+          "correctIndex": 0,
+          "explanation": "A class defines the structure/behaviour that objects follow."
+        },
+        {
+          "text": "An object is…",
+          "options": ["A type of loop", "An instance of a class", "A compiler setting", "A comment"],
+          "correctIndex": 1,
+          "explanation": "An object is a concrete instance created from a class."
+        },
+        {
+          "text": "Which pillar lets a subclass reuse code from a parent class?",
+          "options": ["Encapsulation", "Polymorphism", "Inheritance", "Abstraction"],
+          "correctIndex": 2,
+          "explanation": "Inheritance lets a class extend another class and reuse its fields and methods."
+        },
+        {
+          "text": "Polymorphism allows…",
+          "options": ["Many objects to be treated through one interface", "Only one object per class", "Variables that never change", "Code without methods"],
+          "correctIndex": 0,
+          "explanation": "Different classes can be used the same way, each with its own implementation."
+        },
+        {
+          "text": "Method overriding happens when…",
+          "options": ["Two methods in a class have different names", "A subclass provides its own version of a parent's method", "A method is deleted", "A method calls itself"],
+          "correctIndex": 1,
+          "explanation": "Overriding replaces an inherited method with a subclass-specific implementation."
+        },
+        {
+          "text": "An abstract class…",
+          "options": ["Can be instantiated directly", "Has no methods", "Cannot be instantiated and is meant to be extended", "Is always final"],
+          "correctIndex": 2,
+          "explanation": "Abstract classes define a shared base that concrete subclasses complete."
+        },
+        {
+          "text": "'Composition over inheritance' means…",
+          "options": ["Never use classes", "Build objects from smaller objects instead of deep class hierarchies", "Always use multiple inheritance", "Put everything in one class"],
+          "correctIndex": 1,
+          "explanation": "Composition is usually more flexible and avoids tightly coupled hierarchies."
+        }
+      ]
+    },
+    {
+      "id": "Requirements",
+      "title": "Requirements Engineering",
+      "desc": "Gathering, writing and validating requirements",
+      "icon": "checklist",
+      "reading": "Requirements describe what a system must do and the constraints it must meet. Getting them wrong is one of the most common reasons projects fail, because mistakes found late are expensive to fix.\n\nFunctional requirements describe behaviour, such as 'the user can reset their password'. Non-functional requirements describe qualities, such as performance, security and usability.\n\nRequirements are gathered (elicited) through interviews, workshops, questionnaires, observation and prototypes. They are then documented, prioritised (for example with MoSCoW: Must, Should, Could, Won't) and validated with stakeholders. Good requirements are clear, testable, consistent and traceable.",
+      "questions": [
+        {
+          "text": "Which is a functional requirement?",
+          "options": ["The system must be available 99.9% of the time", "Users can reset their password by email", "Pages must load in under 2 seconds", "The app must be accessible"],
+          "correctIndex": 1,
+          "explanation": "Functional requirements describe what the system does. The others are qualities."
+        },
+        {
+          "text": "Which is a non-functional requirement?",
+          "options": ["Users can add items to a basket", "Admins can delete accounts", "All data must be encrypted at rest", "Users can search products"],
+          "correctIndex": 2,
+          "explanation": "Security constraints such as encryption are non-functional requirements."
+        },
+        {
+          "text": "What does the 'M' in MoSCoW prioritisation stand for?",
+          "options": ["Maybe", "Must have", "Minor", "Manual"],
+          "correctIndex": 1,
+          "explanation": "MoSCoW stands for Must have, Should have, Could have and Won't have."
+        },
+        {
+          "text": "Requirements elicitation means…",
+          "options": ["Gathering requirements from stakeholders", "Deleting old requirements", "Writing the code", "Deploying the system"],
+          "correctIndex": 0,
+          "explanation": "Elicitation is discovering what stakeholders need, through interviews, workshops and more."
+        },
+        {
+          "text": "Which is the best-written requirement?",
+          "options": ["The system should be fast", "The system should be user-friendly", "Search results appear within 1 second for 95% of queries", "The system should be good"],
+          "correctIndex": 2,
+          "explanation": "Good requirements are specific and testable."
+        },
+        {
+          "text": "A stakeholder is…",
+          "options": ["Only the developer", "Anyone affected by or with an interest in the system", "Only the paying customer", "A testing tool"],
+          "correctIndex": 1,
+          "explanation": "Stakeholders include users, customers, managers, regulators and anyone else with an interest."
+        },
+        {
+          "text": "Why build a prototype during requirements engineering?",
+          "options": ["To ship it as the final product", "To help stakeholders clarify what they actually need", "To avoid talking to users", "To replace testing"],
+          "correctIndex": 1,
+          "explanation": "Prototypes give stakeholders something concrete to react to, which reveals missing or wrong requirements."
+        },
+        {
+          "text": "Requirements traceability means…",
+          "options": ["Tracking who wrote each line of code", "Linking each requirement to its design, code and tests", "Logging user locations", "Counting requirements"],
+          "correctIndex": 1,
+          "explanation": "Traceability shows where each requirement is implemented and how it is tested."
+        }
+      ]
+    },
+    {
+      "id": "Testing",
+      "title": "Software Testing",
+      "desc": "Unit, integration and system testing, TDD",
+      "icon": "bug",
+      "reading": "Testing checks that software behaves as expected and helps find defects before users do. Tests are usually grouped by level: unit tests check a single function or class, integration tests check that components work together, system tests check the whole application, and acceptance tests check that it meets the user's needs.\n\nBlack-box testing designs tests from the specification without looking at the code. White-box testing uses knowledge of the code, for example to cover every branch.\n\nRegression testing re-runs existing tests after a change to make sure nothing broke. In Test-Driven Development (TDD) you write a failing test first, write just enough code to pass it, then refactor: red, green, refactor.",
+      "questions": [
+        {
+          "text": "Which test checks a single function or class in isolation?",
+          "options": ["Unit test", "System test", "Acceptance test", "Load test"],
+          "correctIndex": 0,
+          "explanation": "Unit tests focus on the smallest testable parts of the code."
+        },
+        {
+          "text": "Integration testing checks…",
+          "options": ["Spelling in the UI", "That separate components work together correctly", "Only the database schema", "The user's hardware"],
+          "correctIndex": 1,
+          "explanation": "Integration tests verify the interactions between modules or services."
+        },
+        {
+          "text": "Black-box testing is based on…",
+          "options": ["The internal code structure", "The specification and expected behaviour", "Compiler output", "Code comments"],
+          "correctIndex": 1,
+          "explanation": "Black-box tests are designed without looking at the implementation."
+        },
+        {
+          "text": "What is the correct order of the TDD cycle?",
+          "options": ["Green, red, refactor", "Refactor, red, green", "Red, green, refactor", "Red, refactor, green"],
+          "correctIndex": 2,
+          "explanation": "Write a failing test (red), make it pass (green), then clean up the code (refactor)."
+        },
+        {
+          "text": "Regression testing is done to…",
+          "options": ["Check that recent changes didn't break existing features", "Test brand new hardware", "Measure developer speed", "Write documentation"],
+          "correctIndex": 0,
+          "explanation": "Re-running existing tests after a change catches regressions."
+        },
+        {
+          "text": "Who usually performs user acceptance testing?",
+          "options": ["The compiler", "The end users or customer", "Only the database admin", "Nobody"],
+          "correctIndex": 1,
+          "explanation": "Acceptance testing confirms the system meets the users' needs, so users or their representatives do it."
+        },
+        {
+          "text": "A mock object is used in tests to…",
+          "options": ["Replace a real dependency with a controllable fake", "Make the app run faster in production", "Encrypt test data", "Generate the UI"],
+          "correctIndex": 0,
+          "explanation": "Mocks isolate the code under test from slow or unpredictable dependencies."
+        },
+        {
+          "text": "Code coverage measures…",
+          "options": ["How many users the app has", "How much of the code is executed by the tests", "The number of bugs found", "Server uptime"],
+          "correctIndex": 1,
+          "explanation": "Coverage shows which lines or branches the test suite runs. High coverage doesn't guarantee there are no bugs."
+        }
+      ]
+    },
+    {
+      "id": "Design Patterns",
+      "title": "Design Patterns",
+      "desc": "Singleton, Observer, Factory and more",
+      "icon": "puzzle",
+      "reading": "Design patterns are proven, reusable solutions to common design problems. The 'Gang of Four' book grouped them into three families.\n\nCreational patterns deal with creating objects: Singleton ensures a class has only one instance, Factory Method lets subclasses decide which class to create, and Builder constructs complex objects step by step.\n\nStructural patterns deal with how objects are composed: Adapter makes incompatible interfaces work together, Decorator adds behaviour to an object without changing its class, and Facade provides a simple interface to a complex subsystem.\n\nBehavioural patterns deal with how objects communicate: Observer notifies subscribers when something changes, Strategy swaps algorithms at runtime, and Command turns a request into an object.",
+      "questions": [
+        {
+          "text": "Which pattern ensures a class has only one instance?",
+          "options": ["Factory Method", "Singleton", "Observer", "Adapter"],
+          "correctIndex": 1,
+          "explanation": "Singleton restricts a class to a single shared instance."
+        },
+        {
+          "text": "Which pattern notifies subscribers when an object's state changes?",
+          "options": ["Observer", "Builder", "Facade", "Decorator"],
+          "correctIndex": 0,
+          "explanation": "Observers subscribe to a subject and are notified of changes."
+        },
+        {
+          "text": "Which pattern lets incompatible interfaces work together?",
+          "options": ["Strategy", "Singleton", "Adapter", "Command"],
+          "correctIndex": 2,
+          "explanation": "An Adapter wraps one interface so it matches another."
+        },
+        {
+          "text": "Factory Method is which type of pattern?",
+          "options": ["Structural", "Behavioural", "Creational", "Architectural"],
+          "correctIndex": 2,
+          "explanation": "Factory Method is about creating objects, so it is creational."
+        },
+        {
+          "text": "Which pattern adds behaviour to an object without changing its class?",
+          "options": ["Decorator", "Singleton", "Factory Method", "Observer"],
+          "correctIndex": 0,
+          "explanation": "A Decorator wraps an object and adds behaviour around it."
+        },
+        {
+          "text": "The Strategy pattern lets you…",
+          "options": ["Create only one object", "Swap algorithms at runtime", "Hide a whole subsystem", "Undo actions"],
+          "correctIndex": 1,
+          "explanation": "Strategy puts each algorithm behind a shared interface so they can be swapped."
+        },
+        {
+          "text": "Which pattern provides one simple interface to a complex subsystem?",
+          "options": ["Facade", "Observer", "Builder", "Prototype"],
+          "correctIndex": 0,
+          "explanation": "A Facade hides complexity behind a single, easy-to-use interface."
+        },
+        {
+          "text": "The 'Gang of Four' grouped design patterns into…",
+          "options": ["Front-end, back-end and database", "Creational, structural and behavioural", "Easy, medium and hard", "Public, private and protected"],
+          "correctIndex": 1,
+          "explanation": "The three GoF families are creational, structural and behavioural."
+        }
+      ]
+    },
+    {
+      "id": "Version Control",
+      "title": "Version Control with Git",
+      "desc": "Commits, branches, merges and pull requests",
+      "icon": "branch",
+      "reading": "Version control records changes to files over time so you can see history, undo mistakes and work with others safely. Git is the most widely used version control system and is distributed: every developer has a full copy of the repository.\n\nA commit is a snapshot of your changes with a message. A branch is an independent line of development, so features can be built without affecting the main branch. Merging combines branches back together; if the same lines changed on both, Git reports a merge conflict that a developer must resolve.\n\nTeams often share code through a remote such as GitHub. 'git pull' fetches and merges remote changes, 'git push' uploads your commits, and a pull request asks teammates to review a branch before it is merged.",
+      "questions": [
+        {
+          "text": "What does a Git commit represent?",
+          "options": ["A snapshot of changes with a message", "A deleted file", "A server", "A user account"],
+          "correctIndex": 0,
+          "explanation": "Each commit records a snapshot of the project and why it changed."
+        },
+        {
+          "text": "Why do developers create branches?",
+          "options": ["To delete history", "To work on changes without affecting the main line", "To speed up the computer", "To encrypt the code"],
+          "correctIndex": 1,
+          "explanation": "Branches isolate work in progress until it's ready to merge."
+        },
+        {
+          "text": "Which command uploads your local commits to a remote?",
+          "options": ["git pull", "git clone", "git push", "git status"],
+          "correctIndex": 2,
+          "explanation": "git push sends your commits to the remote repository."
+        },
+        {
+          "text": "A merge conflict happens when…",
+          "options": ["The internet is down", "Two branches change the same lines differently", "A file is too large", "A commit has no message"],
+          "correctIndex": 1,
+          "explanation": "Git can't decide which change to keep, so a developer has to resolve it."
+        },
+        {
+          "text": "What does 'git pull' do?",
+          "options": ["Fetches remote changes and merges them into your branch", "Deletes the remote", "Creates a new repository", "Shows the commit history"],
+          "correctIndex": 0,
+          "explanation": "git pull is a fetch followed by a merge (or rebase)."
+        },
+        {
+          "text": "A pull request is used to…",
+          "options": ["Download Git", "Ask teammates to review and merge a branch", "Undo the last commit", "Rename a repository"],
+          "correctIndex": 1,
+          "explanation": "Pull requests support code review before changes reach the main branch."
+        },
+        {
+          "text": "Git is a distributed version control system, which means…",
+          "options": ["Only one server holds the history", "Every developer has a full copy of the repository", "It only works offline", "It can't be used by teams"],
+          "correctIndex": 1,
+          "explanation": "Each clone contains the whole history, so work continues even without the server."
+        },
+        {
+          "text": "What is the purpose of a .gitignore file?",
+          "options": ["To list files Git should not track", "To delete files", "To store passwords", "To speed up commits"],
+          "correctIndex": 0,
+          "explanation": "Build output, secrets and local settings are usually listed in .gitignore."
+        }
+      ]
+    },
+    {
+      "id": "UML",
+      "title": "UML and System Design",
+      "desc": "Diagrams for modelling software",
+      "icon": "diagram",
+      "reading": "The Unified Modelling Language (UML) is a standard set of diagrams for describing software. Diagrams help teams agree on a design before writing code and document it afterwards.\n\nStructural diagrams show what the system is made of. A class diagram shows classes, their attributes, methods and relationships such as association, inheritance, aggregation and composition.\n\nBehavioural diagrams show what the system does. A use case diagram shows actors and the goals they achieve with the system. A sequence diagram shows the messages exchanged between objects over time. An activity diagram shows a workflow, similar to a flowchart, and a state machine diagram shows how an object moves between states.",
+      "questions": [
+        {
+          "text": "What does UML stand for?",
+          "options": ["Unified Modelling Language", "Universal Machine Logic", "User Management Layer", "Unified Markup List"],
+          "correctIndex": 0,
+          "explanation": "UML is the Unified Modelling Language."
+        },
+        {
+          "text": "Which diagram shows classes, attributes and their relationships?",
+          "options": ["Sequence diagram", "Class diagram", "Use case diagram", "Activity diagram"],
+          "correctIndex": 1,
+          "explanation": "Class diagrams describe the static structure of a system."
+        },
+        {
+          "text": "Which diagram shows messages between objects over time?",
+          "options": ["Class diagram", "Deployment diagram", "Sequence diagram", "Component diagram"],
+          "correctIndex": 2,
+          "explanation": "Sequence diagrams order interactions along a timeline."
+        },
+        {
+          "text": "In a use case diagram, an actor is…",
+          "options": ["A class in the code", "A user or external system that interacts with the system", "A database table", "A test case"],
+          "correctIndex": 1,
+          "explanation": "Actors sit outside the system boundary and use it to achieve goals."
+        },
+        {
+          "text": "In a class diagram, a hollow triangle arrow shows…",
+          "options": ["Inheritance (generalisation)", "A method call", "A database link", "A loop"],
+          "correctIndex": 0,
+          "explanation": "The hollow triangle points from the subclass to the parent class."
+        },
+        {
+          "text": "Composition differs from aggregation because…",
+          "options": ["The parts can't exist without the whole", "It is drawn with a dashed line", "It only applies to interfaces", "There is no difference"],
+          "correctIndex": 0,
+          "explanation": "In composition (filled diamond) the parts' lifetime depends on the whole."
+        },
+        {
+          "text": "Which diagram is most like a flowchart of a workflow?",
+          "options": ["Class diagram", "Activity diagram", "Object diagram", "Package diagram"],
+          "correctIndex": 1,
+          "explanation": "Activity diagrams model the steps and decisions in a process."
+        },
+        {
+          "text": "Which diagram shows how an object moves between states?",
+          "options": ["State machine diagram", "Use case diagram", "Class diagram", "Deployment diagram"],
+          "correctIndex": 0,
+          "explanation": "State machine diagrams show states and the events that trigger transitions."
+        }
+      ]
+    }
+  ]
+}
